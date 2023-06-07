@@ -29,18 +29,19 @@ public class Task1 {
             String phones = "";
             for(int el: item.getValue()){
                 phones = phones + el + ", ";
+
             }
             System.out.printf("%s: %s \n", item.getKey(), phones);
         }
     }
     public static void main(String[] args) {
         Map<String, ArrayList<Integer>> bookPhone = new HashMap<>();
-        addNumber("Ivanov", 123, bookPhone);
-        addNumber("Ivanov", 1234, bookPhone);
-        addNumber("Petrov", 546585, bookPhone);
-        addNumber("Smirnov", 8956477, bookPhone);
-        addNumber("Ivanov", 12356233, bookPhone);
-        addNumber("Petrov", 787897, bookPhone);
+        addNumber("Курицин", 1122333, bookPhone);
+        addNumber("Курицин", 1662333, bookPhone);
+        addNumber("Курицин", 1112333, bookPhone);
+        addNumber("Антонов", 1122432, bookPhone);
+        addNumber("Потапов", 1112453, bookPhone);
+        addNumber("Потапов", 1632145, bookPhone);
         printBook(bookPhone);
     }
 }
